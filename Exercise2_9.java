@@ -8,13 +8,18 @@ public class Exercise2_9 {
           System.out.println("Please, input amout of Thai baht: ");
           float baht = input.nextFloat();
 
-          String pattern = "0.00";  
+          //กำหนดรูแบบจำนวนทศนิยมที่ต้องการแสดง
+          String pattern = "0.00";
+          //สร้างรูปแบบการแสดงผลตัวเลขทศนิยม  
           DecimalFormat df = new DecimalFormat(pattern);
 
           float us = baht / rate ;
           System.out.println("You got "+us+" $");
           
+          //ค่าตัวเลขทศนิยม 
           float value = 5.56789f;
+
+          //กำหนดสตริง
           String output = df.format(value);
           System.out.println("value = "+value + "\npattern is " + pattern + "\noutput is " + output);
           
